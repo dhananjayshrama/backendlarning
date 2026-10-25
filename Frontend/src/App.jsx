@@ -1,0 +1,16 @@
+
+import {BrowserRouter as Router, Routes, Route}from 'react-router-dom'
+import CreatePost  from './pages/createPost'
+import Feed from './pages/Feed'
+const App = () => {
+  return (
+   <Router>
+    <Routes>
+      <Route path='/create-post'element={<CreatePost />}/>
+      <Route path='/Feed'element={<Feed/>} />
+    </Routes>
+   </Router>
+  )
+}
+
+export default App
